@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="slp1.css">
+    <link rel="stylesheet" type="text/css" href="slp2.css">
     <title>SLP</title>
 </head>
 
@@ -10,11 +10,14 @@
     <header class="header">
         <h1>SLP- Structured Learning Platform</h1>
     </header>
-
     <body>
         <div class="container">
-            <h2>Sign Up</h2>
+            <h2>Edit Profile</h2>
             <form action="/login" method="POST">
+                <div class="profile-photo">
+                    <div class="avatar">N</div>
+                </div>
+
                 <div>
                     <label for="username">Username:</label>
                     <input type="username" id="username" name="username" required>
@@ -31,15 +34,13 @@
                 </div>
 
                 <div>
-                    <label for="re-enter password">Re-enter Password:</label>
-                    <input type="re-enter password" id="re-enter" name="re-enter" required>
+                    <label for="confirm password">Confirm Password:</label>
+                    <input type="password" id="password" name="password" required>
                 </div>
 
                 <div class="option">
-                    <input type="submit" value="Sign Up">
-                    <div class="login">
-                        <a href="#">Login</a>
-                    </div>
+                    <input type="submit" value="Save Changes">
+                    <input type="submit" value="Cancel">
                 </div>
             </form>
         </div>
